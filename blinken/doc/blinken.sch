@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Blinken"
+Date "2022-07-30"
+Rev "1"
+Comp "KhaOz"
+Comment1 "Kindergarden"
+Comment2 "Baby"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 62E50843
+P 5750 3400
+F 0 "A?" H 5750 2311 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5750 2220 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5750 3400 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5750 3400 50  0001 C CNN
+	1    5750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E512FF
+P 4850 2450
+F 0 "SW?" H 4850 2735 50  0000 C CNN
+F 1 "SW_Push" H 4850 2644 50  0000 C CNN
+F 2 "" H 4850 2650 50  0001 C CNN
+F 3 "~" H 4850 2650 50  0001 C CNN
+	1    4850 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E526C8
+P 4150 2450
+F 0 "SW?" H 4150 2735 50  0000 C CNN
+F 1 "SW_Push" H 4150 2644 50  0000 C CNN
+F 2 "" H 4150 2650 50  0001 C CNN
+F 3 "~" H 4150 2650 50  0001 C CNN
+	1    4150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E59E3B
+P 3450 2450
+F 0 "SW?" H 3450 2735 50  0000 C CNN
+F 1 "SW_Push" H 3450 2644 50  0000 C CNN
+F 2 "" H 3450 2650 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E59E45
+P 2750 2450
+F 0 "SW?" H 2750 2735 50  0000 C CNN
+F 1 "SW_Push" H 2750 2644 50  0000 C CNN
+F 2 "" H 2750 2650 50  0001 C CNN
+F 3 "~" H 2750 2650 50  0001 C CNN
+	1    2750 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E5C30D
+P 2100 2450
+F 0 "SW?" H 2100 2735 50  0000 C CNN
+F 1 "SW_Push" H 2100 2644 50  0000 C CNN
+F 2 "" H 2100 2650 50  0001 C CNN
+F 3 "~" H 2100 2650 50  0001 C CNN
+	1    2100 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62E5C317
+P 1400 2450
+F 0 "SW?" H 1400 2735 50  0000 C CNN
+F 1 "SW_Push" H 1400 2644 50  0000 C CNN
+F 2 "" H 1400 2650 50  0001 C CNN
+F 3 "~" H 1400 2650 50  0001 C CNN
+	1    1400 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 62E5DE67
+P 900 2250
+F 0 "#PWR?" H 900 2000 50  0001 C CNN
+F 1 "Earth" H 900 2100 50  0001 C CNN
+F 2 "" H 900 2250 50  0001 C CNN
+F 3 "~" H 900 2250 50  0001 C CNN
+	1    900  2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  2250 1400 2250
+Wire Wire Line
+	1400 2250 2100 2250
+Connection ~ 1400 2250
+Wire Wire Line
+	2750 2250 2100 2250
+Connection ~ 2100 2250
+Wire Wire Line
+	2750 2250 3450 2250
+Connection ~ 2750 2250
+Wire Wire Line
+	3450 2250 4150 2250
+Connection ~ 3450 2250
+Wire Wire Line
+	4150 2250 4850 2250
+Connection ~ 4150 2250
+Wire Wire Line
+	5250 2800 4850 2800
+Wire Wire Line
+	4850 2800 4850 2650
+Wire Wire Line
+	5250 2900 4150 2900
+Wire Wire Line
+	4150 2900 4150 2650
+Wire Wire Line
+	5250 3000 3450 3000
+Wire Wire Line
+	3450 3000 3450 2650
+Wire Wire Line
+	5250 3100 2750 3100
+Wire Wire Line
+	2750 3100 2750 2650
+Wire Wire Line
+	5250 3200 2100 3200
+Wire Wire Line
+	2100 3200 2100 2650
+Wire Wire Line
+	5250 3300 1400 3300
+Wire Wire Line
+	1400 3300 1400 2650
+$Comp
+L Device:LED D?
+U 1 1 62E66E5B
+P 3900 3600
+F 0 "D?" H 3893 3816 50  0000 C CNN
+F 1 "LED" H 3893 3725 50  0000 C CNN
+F 2 "" H 3900 3600 50  0001 C CNN
+F 3 "~" H 3900 3600 50  0001 C CNN
+	1    3900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62E67D20
+P 3900 3950
+F 0 "D?" H 3893 4166 50  0000 C CNN
+F 1 "LED" H 3893 4075 50  0000 C CNN
+F 2 "" H 3900 3950 50  0001 C CNN
+F 3 "~" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62E6D7F3
+P 3900 4350
+F 0 "D?" H 3893 4566 50  0000 C CNN
+F 1 "LED" H 3893 4475 50  0000 C CNN
+F 2 "" H 3900 4350 50  0001 C CNN
+F 3 "~" H 3900 4350 50  0001 C CNN
+	1    3900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62E70D56
+P 3900 4800
+F 0 "D?" H 3893 5016 50  0000 C CNN
+F 1 "LED" H 3893 4925 50  0000 C CNN
+F 2 "" H 3900 4800 50  0001 C CNN
+F 3 "~" H 3900 4800 50  0001 C CNN
+	1    3900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62E7428F
+P 3900 5250
+F 0 "D?" H 3893 5466 50  0000 C CNN
+F 1 "LED" H 3893 5375 50  0000 C CNN
+F 2 "" H 3900 5250 50  0001 C CNN
+F 3 "~" H 3900 5250 50  0001 C CNN
+	1    3900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62E763E7
+P 3900 5700
+F 0 "D?" H 3893 5916 50  0000 C CNN
+F 1 "LED" H 3893 5825 50  0000 C CNN
+F 2 "" H 3900 5700 50  0001 C CNN
+F 3 "~" H 3900 5700 50  0001 C CNN
+	1    3900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3600 4050 3600
+Wire Wire Line
+	5250 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3950
+Wire Wire Line
+	5250 3800 4150 3800
+Wire Wire Line
+	4150 3800 4150 4350
+Wire Wire Line
+	4150 4350 4050 4350
+Wire Wire Line
+	5250 3900 4250 3900
+Wire Wire Line
+	4250 3900 4250 4800
+Wire Wire Line
+	4250 4800 4050 4800
+Wire Wire Line
+	5250 4000 4350 4000
+Wire Wire Line
+	4350 4000 4350 5250
+Wire Wire Line
+	4350 5250 4050 5250
+Wire Wire Line
+	5250 4100 4450 4100
+Wire Wire Line
+	4450 4100 4450 5700
+Wire Wire Line
+	4450 5700 4050 5700
+$Comp
+L power:+5V #PWR?
+U 1 1 62E7BFF3
+P 5650 1750
+F 0 "#PWR?" H 5650 1600 50  0001 C CNN
+F 1 "+5V" H 5665 1923 50  0000 C CNN
+F 2 "" H 5650 1750 50  0001 C CNN
+F 3 "" H 5650 1750 50  0001 C CNN
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1750 5650 2400
+$Comp
+L power:Earth #PWR?
+U 1 1 62E7EF74
+P 5750 5100
+F 0 "#PWR?" H 5750 4850 50  0001 C CNN
+F 1 "Earth" H 5750 4950 50  0001 C CNN
+F 2 "" H 5750 5100 50  0001 C CNN
+F 3 "~" H 5750 5100 50  0001 C CNN
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4400 5750 5100
+$EndSCHEMATC
